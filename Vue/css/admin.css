@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Questrial&display=swap%27');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #050206; 
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+:root {
+    --color-red: #ff0000; 
+}
+.color-red{
+    color: red;
+}
+
+/* Nav bar */
+
+.navbar{
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    background-color: #2635E6;
+    background-color: #b40903;
+}
+
+.navbar_right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar_right i, .navbar_left i{
+    color: orange;
+    font-size: 3rem;
+}
+
+.navbar_right a{
+    font-size: 2rem;
+    color: white;
+}
+.navbar_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+
+#logout{
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 30px;
+    border: none;
+    padding-right: 5%;
+    color:red
+}
+
+.titre_admin{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+
+.admin{
+    width: 60%;
+    margin-left: 20%;
+    height: 70vh;
+    border: 3px solid red;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    /* background-color: red; */
+
+}
+
+.divP p{
+    color: white;
+}
+.divP{
+    border: 4px solid orange;
+    width: 47%;
+    height: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom:5px ;
+}
+
+.divP:hover{
+    font-size: 2.8rem;
+    border: 2px solid white;
+
+    /* background-color: #b40903; */
+}

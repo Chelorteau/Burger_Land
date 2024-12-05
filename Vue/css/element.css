@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Questrial&display=swap%27');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:black; 
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+:root {
+    --color-red: #ff0000; 
+}
+
+.color-red{
+    color: #800000;
+}
+/* Nav bar */
+
+.navbar{
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    background-color: #800000;
+}
+
+.navbar_right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar_right i, .navbar_left i{
+    color: #ffff99;
+    font-size: 3rem;
+}
+
+.navbar_right a{
+    font-size: 2rem;
+    color: white;
+}
+.navbar_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+
+#panier{
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 30px;
+    border: none;
+    padding-right: 5%;
+    color:red
+}
+
+.titre_crudite{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+
+.crudite_element{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.crudite{
+    cursor : pointer;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    width: 30rem;
+    height: 40rem;
+    border: 1px solid var(--color-red);
+    border-radius: 130px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    color: white;
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+}
+
+.crudite:hover{
+border: 1px solid white;
+}
+.crudite img{
+    width: 14rem;
+    height: 12rem;
+}
+
+.crudite_price{
+    color: var(--color-red);
+    font-size: 2rem;
+}
+
+.crudite button, .submit{
+    border-radius: 4rem;
+    font-size: 2rem;
+    width: 5rem;
+    border: 1px solid white;
+}
+
+.crudite button:hover{
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+
+.crudite input{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.submit{
+    border-radius: 4rem;
+    font-size: 3rem;
+    width: 20rem;
+    border: 1px solid white;
+    margin-top: 2rem;
+}
+.submit:hover{
+    color: white;
+    background-color: red;
+}
+
+
+.form_crudite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .ajout {
+    font-size: 1.5rem; 
+    color: green;
+}
+
+
+
+.hidden {
+    color: transparent;
+}
+
+.desc{
+    font-size: 1rem;
+} */
+
+
+
+  

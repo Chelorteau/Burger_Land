@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Questrial&display=swap%27');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #050206; 
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+:root {
+    --color-red: #ff0000; 
+}
+
+.color-red{
+    color: red;
+}
+/* Nav bar */
+
+
+.navbar{
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    background-color: #800000;
+}
+
+.navbar_right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar_right i, .navbar_left i{
+    color: #ffff99;
+    font-size: 3rem;
+}
+
+.navbar_right a{
+    font-size: 2rem;
+    color: white;
+}
+.navbar_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+#panier{
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 30px;
+    border: none;
+    padding-right: 5%;
+
+}
+
+  
+/* Formulaires */
+form {
+    max-width: 700px;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #cc0000;
+}

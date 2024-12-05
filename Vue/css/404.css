@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Questrial&display=swap%27');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #050206; 
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.error-container {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-container button{
+    border-radius: 4rem;
+    font-size: 3rem;
+    width: 20rem;
+    border: 1px solid white;
+}
+
+
+.error-container button:hover{
+    border: 1px solid red;
+    color: red;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff0000;
+}
+
+p {
+    font-size: 18px;
+    color: #800000;
+}
+

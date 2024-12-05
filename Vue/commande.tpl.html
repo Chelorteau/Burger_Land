@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Vue/css/commande.css" />
+    <title>Commandes</title>
+    <script
+      src="https://kit.fontawesome.com/b366f9c22e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_right">
+        <a href="[onshow.cible]"
+          ><i class="fa-solid fa-crown 3x"></i>Burger Land</a
+        >
+        <a href="[onshow.cible]"><i class="fa-solid fa-house"></i></a>
+        <a href="[onshow.cible]?page=menu"
+          ><i class="fa-solid fa-utensils"></i
+        ></a>
+        <a href="[onshow.cible]?page=contact"
+          ><i class="fa-solid fa-address-book"></i
+        ></a>
+      </div>
+      <div class="navbar_left">
+        <button id="panier">
+          <a href="[onshow.cible]?page=panier"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </button>
+      </div>
+    </div>
+    <p class="titre">Les Commandes</p>
+    <div class="commandes">
+        <section class="commande">
+            <div class="client">
+                <div class="titre_client color_red font_size_3">Client n°[commande.utilisateurId;block=section;sub1=lignesCommande] </div>
+                <div class="element_client">
+                    <p class="padding_right_10 border"><span class="color_red">Nom</span> : [commande.utilisateurNom;block=section;sub1=lignesCommande] </p>
+                    <p class="padding_right_10"><span class="color_red">Prenom</span> : [commande.utilisateurPrenom;block=section;sub1=lignesCommande]</p>
+                    <p class="padding_right_10"><span class="color_red">Adresse</span> : [commande.utilisateurAdresse;block=section;sub1=lignesCommande]</p>
+                    <p class="padding_right_10"><span class="color_red">Numéro</span> : [commande.utilisateurNum;block=section;sub1=lignesCommande]</p>
+                    <p class="padding_right_10"><span class="color_red">Mode de paiement</span> : [commande.utilisateurMdp;block=section;sub1=lignesCommande]</p>
+
+
+                </div>
+            </div>
+            <div class="command">
+                <div class="titre_command color_red font_size_3">Commande n°[commande.commandeId;block=section;sub1=lignesCommande] <span class="color_white">[commande.commandeDate;block=section;commande_sub1=lignesCommande]</span> </div>
+                <main class="element_command">
+                    <p class="padding_right_10"><span class="color_red">Burger : </span> [commande_sub1.BURGER_NOM;block=main]</p>
+                    <p class="padding_right_10"><span class="color_red">Crudites : </span> [commande_sub1.Crudites;block=main]</p>
+                    <p class="padding_right_10"><span class="color_red">Sauces : </span> [commande_sub1.Sauces;block=main]</p>
+                    <p class="padding_right_10"><span class="color_red">Boissons : </span>  [commande_sub1.Boissons;block=main]</p>
+                    <p class="padding_right_10"><span class="color_red">Prix : </span>  [commande_sub1.LGN_CMD_PRIX;block=main] €</p>
+                </main> 
+            </div>
+            <div>
+                <p class="text_align_center">prix total : [commande.prixTotal;block=section;sub1=lignesCommande] €</p>
+                <a href="[onshow.cible]?page=admin&pageAdmin=confirmerLivre&cmd_id=[commande.commandeId;block=section;sub1=lignesCommande]"><button class="confirmer_button">Confirmer la Livraison</button></a> 
+            </div>
+            
+        </section>
+    </div>
+    </div>
+  </body>
+</html>

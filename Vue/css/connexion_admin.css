@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Questrial&display=swap%27');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #050206; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+}
+:root {
+    --color-red: #ff0000; 
+}
+
+.color-red{
+    color: #800000;
+}
+/* Nav bar */
+
+.navbar{
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    background-color: #800000;
+}
+
+.navbar_right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar_right i, .navbar_left i{
+    color: #ffff99;
+    font-size: 3rem;
+}
+
+.navbar_right a{
+    font-size: 2rem;
+    color: white;
+}
+.navbar_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+
+#panier{
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 30px;
+    border: none;
+    padding-right: 5%;
+    color:red
+}
+
+.login-container {
+    margin-top: 20rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #800000;
+}
+
+label{
+    text-align: end;
+    font-size: 1.5rem;
+}
+
+.text-align-center{
+    text-align: center;
+    font-size: 2rem;
+}
+.error{
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+}

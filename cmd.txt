@@ -1,0 +1,51 @@
+docker run -d -p 8000:80 --name burger_land_container burger_land:latest -> http://localhost:8000
+docker stop burger_land_container
+
+
+docker build -t burger_land .
+docker rmi burger_land
+
+
+-- push l'image 
+az login -- az login --tenant e0422d3d-f519-4254-88a7-c45b60213e8b
+
+az acr login --name burgerRegistry --expose-token
+docker login burgerregistry.azurecr.io -u 00000000-0000-0000-0000-000000000000 -p (token)
+****az acr login --name burgerRegistry
+
+
+
+-- test de push 
+docker pull mcr.microsoft.com/mcr/hello-world
+docker tag mcr.microsoft.com/mcr/hello-world burgerregistry.azurecr.io/samples/hello-world
+docker push burgerregistry.azurecr.io/samples/hello-world
+
+
+--- push mon image
+docker build -t burger_land .
+docker tag burger_land:latest burgerRegistry.azurecr.io/burgerland:latest
+docker push burgerRegistry.azurecr.io/burgerland:latest
+
+-- fonctionne
+docker tag burger_land burgerregistry.azurecr.io/samples/burgerland:latest
+docker push burgerregistry.azurecr.io/samples/burgerland:latest
+
+
+
+--  Create an Identity for your WebApp
+Enable "System Identity", then click on Save. -> done
+
+-- Assign roles to your WebApp -> done
+
+-- 9. Make the Webapp deploy the image from the registry
+
+
+ 
+-- tips 
+
+docker images -> voir les images 
+docker ps -> voir les container actif 
+docker ps -a -> voir les container actif et arrété 
+
+-- to do 
+GitHub 

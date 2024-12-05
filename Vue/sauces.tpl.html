@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sauces</title>
+    <link rel="stylesheet" href="../Vue/css/element.css" />
+    <script
+      src="https://kit.fontawesome.com/b366f9c22e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_right">
+        <a href="[onshow.cible]"
+          ><i class="fa-solid fa-crown 3x"></i>Burger Land</a
+        >
+        <a href="[onshow.cible]"><i class="fa-solid fa-house"></i> Acceuil</a>
+        <a href="[onshow.cible]?page=menu"
+          ><i class="fa-solid fa-utensils"></i> Menu</a
+        >
+        <a href="[onshow.cible]?page=contact"
+          ><i class="fa-solid fa-address-book"></i> Contact</a
+        >
+      </div>
+      <div class="navbar_left">
+        <button id="panier">
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </button>
+      </div>
+    </div>
+    <div>
+      <p class="titre_crudite">
+        <span class="color-red">Sauces</span>
+      </p>
+    </div>
+    <form
+      class="form_crudite"
+      action="[onshow.cible]?page=boisson"
+      method="post"
+    >
+      <button class="submit" type="submit">Suivant</button>
+
+      <div class="crudite_element">
+        <div
+          class="crudite"
+          onclick="toggleCheckbox('[sauce.SAUCE_ID;block=div]')"
+        >
+          <img
+            src="[sauce.SAUCE_IMG;block=div]"
+            alt="[sauce.SAUCE_NOM;block=div]]"
+          />
+          <p>[sauce.SAUCE_NOM;block=div]</p>
+          <input
+            type="checkbox"
+            id="[sauce.SAUCE_ID;block=div]"
+            name="[sauce.SAUCE_ID;block=div]"
+          />
+        </div>
+      </div>
+      <script>
+        function toggleCheckbox(checkboxId) {
+          var checkbox = document.getElementById(checkboxId);
+          checkbox.checked = !checkbox.checked;
+          var divParent = checkbox.parentElement;
+          if (checkbox.checked) {
+            divParent.style.backgroundColor = "white";
+            divParent.style.color = "black";
+          } else {
+            divParent.style.backgroundColor = "";
+            divParent.style.color = "";
+          }
+        }
+      </script>
+      <input type="hidden" name="BURGER_ID" value="[onshow.burgerID]" />
+    </form>
+  </body>
+</html>

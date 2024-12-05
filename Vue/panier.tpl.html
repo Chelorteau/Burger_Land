@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panier</title>
+    <link rel="stylesheet" href="../Vue/css/panier.css" />
+    <script
+      src="https://kit.fontawesome.com/b366f9c22e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_right">
+        <a href="[onshow.cible]"
+          ><i class="fa-solid fa-crown 3x"></i>Burger Land</a
+        >
+        <a href="[onshow.cible]"><i class="fa-solid fa-house"></i> Accueil</a>
+        <a href="[onshow.cible]?page=menu"
+          ><i class="fa-solid fa-utensils"></i
+        > Menu</a>
+        <a href="[onshow.cible]?page=contact"
+          ><i class="fa-solid fa-address-book"></i
+        > Contact</a>
+      </div>
+      <div class="navbar_left">
+        <button id="panier">
+          <a href="[onshow.cible]?page=panier"><i class="fa-solid fa-cart-shopping"></i></a>
+        </button>
+      </div>
+    </div>
+    <div>
+      <p class="titre_panier">
+        <span class="color-red">Panier</span>
+      </p>
+
+      <div class="panier_element">
+          <div class="burger">
+              <img src="[panier.burgerImg;block=div]"/>
+              <p><span class="color_yellow">[panier.burgerNom;block=div]</span></p>
+              <p class="cache"><span class="color_red">Crudite</span> : [panier.crudites;block=div]</p> 
+              <p class="cache"><span class="color_red">Sauce</span> : [panier.sauces;block=div]</p> 
+              <p class="cache"><span class="color_red">Boisson</span> : [panier.boissons;block=div] </p> 
+              <p><span class="color_red">Prix</span> : [panier.prix;block=div]€</p> 
+              <form action="[onshow.cible]?page=supprimer_burger" method="POST">
+                <input type="hidden" name="burgerId" value="[panier.id;block=div]">
+                <button class="supprimer" type="submit">Supprimer</button>
+              </form>
+          </div>
+          <p class="prix_final">Total : [onshow.prixFinal]€</p>
+      </div>
+      <a href="[onshow.cible]?page=validation_panier"><button class="valider" type="submit">Valider Panier</button>
+      </a>
+    </div>
+    <script>
+      function cacherElementsVides() {
+        var elements = document.querySelectorAll('.cache');
+        elements.forEach(function(element) {
+          var content = element.textContent.trim(); 
+          if (content.endsWith(":")) { 
+            element.style.display = 'none'; 
+          }
+        });
+      }
+      document.addEventListener('DOMContentLoaded', cacherElementsVides); 
+    </script>
+  </body>
+</html

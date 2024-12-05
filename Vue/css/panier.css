@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Questrial&display=swap%27');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #050206; 
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+:root {
+    --color-red: #ff0000; 
+}
+
+.color-red{
+    color: red;
+}
+.color_yellow{
+    color: #ffff99;
+    font-size: 3rem;
+}
+/* Nav bar */
+
+.navbar{
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    background-color: #800000;
+}
+
+.navbar_right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar_right i, .navbar_left i{
+    color: #ffff99;
+    font-size: 3rem;
+}
+
+.navbar_right a{
+    font-size: 2rem;
+    color: white;
+}
+.navbar_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+
+#panier{
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 30px;
+    border: none;
+    padding-right: 5%;
+    color:red
+}
+
+.titre_panier{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+
+.panier_element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1rem solid white;
+    border-radius: 3rem;
+    padding: 10px;
+    width: 85%;
+    margin-left: 7.5%;
+  }
+  
+.burger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 90%;
+    border-bottom: 0.5rem solid red;
+}
+
+  
+.burger img {
+    width: 20rem; 
+    height: auto;
+    margin-right: 20px;
+}
+  
+.burger p {
+    margin-right: 20px;
+    font-size: 2rem;
+    text-shadow: 0 0 1px white; 
+
+}
+  
+.crudite-element p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+  .color_red{
+    color: red;
+  }
+  
+
+  .supprimer{
+    border-radius: 4rem;
+    font-size: 2rem;
+    border: 1px solid white;
+    float: right;
+
+  }
+
+  .supprimer:hover{
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+
+.valider{
+    width: 20%;
+    border-radius: 4rem;
+    font-size: 3rem;
+    border: 1px solid white;
+    margin-top: 5rem;
+    margin-left: 40%;
+}
+
+.valider:hover{
+    border: 3px solid var(--color-red);
+
+}
+
+.prix_final{
+    color: white;
+    font-size: 3rem;
+}

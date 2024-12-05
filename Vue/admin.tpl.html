@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrateur</title>
+    <link rel="stylesheet" href="../Vue/css/admin.css" />
+    <script
+      src="https://kit.fontawesome.com/b366f9c22e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_right">
+        <a href="[onshow.cible]"
+          ><i class="fa-solid fa-crown 3x"></i> Burger Land</a
+        >
+        <a href="[onshow.cible]"><i class="fa-solid fa-house"></i> Accueil</a>
+        <a href="[onshow.cible]?page=menu"
+          ><i class="fa-solid fa-utensils"> </i> Menu</a
+        >
+        <a href="[onshow.cible]?page=contact"
+          ><i class="fa-solid fa-address-book"></i> Contact</a
+        >
+      </div>
+      <div class="navbar_left">
+        <button id="logout">
+          <a href="[onshow.cible]?page=decoAdmin"
+            ><i class="fa-solid fa-right-from-bracket"></i
+          ></a>
+        </button>
+      </div>
+    </div>
+    <div>
+      <p class="titre_admin">
+        <span class="color-red">Administration</span>
+      </p>
+
+      <div class="admin">
+        <div class="divP commande">
+          <a
+            href="../Controleur/ControleurRequete.php?page=admin&pageAdmin=commandes"
+            ><p>Commandes non livré</p></a
+          >
+        </div>
+        <div class="divP commande_fait">
+          <a
+            href="../Controleur/ControleurRequete.php?page=admin&pageAdmin=commandesLivre"
+            ><p>Commandes déja livré</p></a
+          >
+        </div>
+        <div class="divP ajout_produit">
+          <a
+            href="../Controleur/ControleurRequete.php?page=admin&pageAdmin=ajoutProduit"
+            ><p>Ajouter produits</p></a
+          >
+        </div>
+        <div class="divP raport">
+          <a
+            href="../Controleur/ControleurRequete.php?page=admin&pageAdmin=raport"
+            ><p>Rapport analytique</p></a
+          >
+        </div>
+      </div>
+    </div>
+    <form
+      class="form_crudite"
+      action="[onshow.cible]?page=panier"
+      method="post"
+    ></form>
+  </body>
+</html>

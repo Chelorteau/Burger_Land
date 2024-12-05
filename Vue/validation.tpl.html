@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Panier</title>
+    <link rel="stylesheet" href="../Vue/css/validation.css" />
+    <script
+      src="https://kit.fontawesome.com/b366f9c22e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_right">
+        <a href="[onshow.cible]"
+          ><i class="fa-solid fa-crown 3x"></i> Burger Land</a
+        >
+        <a href="[onshow.cible]"><i class="fa-solid fa-house"></i> Accueil</a>
+        <a href="[onshow.cible]?page=menu"
+          ><i class="fa-solid fa-utensils"> </i> Menu</a
+        >
+        <a href="[onshow.cible]?page=contact"
+          ><i class="fa-solid fa-address-book"></i> Contact</a
+        >
+      </div>
+      <div class="navbar_left">
+        <button id="panier">
+          <a href="[onshow.cible]?page=panier"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </button>
+      </div>
+    </div>
+    <div>
+      <p class="titre_valider">
+        Validation du Panier
+      </p>
+
+      <form action="[onshow.cible]?page=traitement_validation_panier" method="POST">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="numero">Numéro de Téléphone :</label><br>
+        <input type="tel" id="numero" name="numero"  required><br><br>
+
+        <label for="adresse">Adresse Mail:</label><br>
+        <input type="text" id="adresseMail" name="adresseMail" required><br><br>
+
+        <label for="adresseLivraison">Adresse de Livraison :</label><br>
+        <input type="text" id="adresseLivraison" name="adresseLivraison" required><br><br>
+
+        <label for="modePaiement">Mode de Paiement :</label><br>
+        <select id="modePaiement" name="modePaiement" required>
+            <option value="Carte">Carte Bancaire</option>
+            <option value="Espece">Espece</option>
+        </select><br><br>
+
+        <input type="submit" value="Valider Panier">
+    </form>    </div>
+  </body>
+</html
